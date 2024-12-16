@@ -1,0 +1,43 @@
+<div class="container product-container mt-5" [style.background-color]="backgroundColor">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="text-primary">Products</h3>
+    <h2>UserId: {{userId}}</h2>
+    <h2>Role: {{RoleName}}</h2>
+    <h2>Permissions: {{Permissions}}</h2>
+    <button
+      class="btn btn-danger logout-btn"
+      (click)="logout()"
+    >
+      Log Out
+    </button>
+
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let product of products">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-dark">{{ product.name }}</h5>
+          <p class="card-text text-muted mb-2">Stock: {{ product.stock }}</p>
+          <p class="card-text text-muted">{{ product.description }}</p>
+          <div class="mt-auto">
+            <button
+              class="btn text-white btn-purchase w-100 mb-2"
+              [style.background-color]="getButtonColor('purchase')"
+              (click)="purchaseProduct(product.id)"
+            >
+              Purchase
+            </button>
+            <button
+              *ngIf="isButtonVisible('details')"
+              class="btn btn-outline-primary w-100"
+              (click)="viewProduct(product.id)"
+            >
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

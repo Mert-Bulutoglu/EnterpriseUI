@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.product-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.logout-btn {
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.btn-purchase {
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-purchase:hover {
+  transform: translateY(-3px);
+  background-color: #004085 !important; /* Adjust for hover */
+}
+
+.btn-outline-primary {
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.row.g-4 {
+  row-gap: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .logout-btn {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}

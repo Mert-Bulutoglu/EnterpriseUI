@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e6f2);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  border: none;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 30px;
+  border: 1px solid #d9e6f2;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
+
+.text-muted a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-muted a:hover {
+  text-decoration: underline;
+}
